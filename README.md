@@ -161,7 +161,7 @@ docker image pull alpine
 docker system df
 ````
 
-- Сценарий "Как ...?"
+- Сценарий "Как запустить образ Линукса в контейнере и приджоиниться к терминалу?"
 ```shell
 docker container ls [--all]
 docker container run --name demo -it alpine
