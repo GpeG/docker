@@ -144,12 +144,15 @@ docker system df
 docker events
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как несекьюрно залогиниться под новым пользователем?"
 (в новом ssh shell, чтобы параллельно видеть вывод `docker events`)
 ```shell
 docker logout
 open https://hub.docker.com/settings/security # to make Access Token
 docker login -u {{ registry-account }} -p {{ access-token }} # login default hub.docker.com registry
+
+# Use docker login -u {{ registry-account }} --password-stdin
+# Or docker login -u {{ registry-account }}
 ```
 
 - Сценарий "Как ...?"
