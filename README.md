@@ -169,7 +169,7 @@ docker container run --name demo -it alpine
 /# exit 
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как удалить контейнер?"
 ```shell
 docker container ls [--all]
 docker container rm [--force] demo
