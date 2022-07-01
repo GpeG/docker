@@ -155,7 +155,7 @@ docker login -u {{ registry-account }} -p {{ access-token }} # login default hub
 # Or docker login -u {{ registry-account }}
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как скачать образ?"
 ```shell
 docker image pull alpine
 docker system df
