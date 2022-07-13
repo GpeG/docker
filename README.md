@@ -405,17 +405,17 @@ docker container ls
 
 - Сценарий "Как запустить контейнер в фоновом режиме?"
 ```shell
-docker container run --detach --name proxy --publish 80:80 nginx:1.19.4 # note `--detach`
+docker container run --detach --name proxy --publish 80:80 nginx:1.19.4 # note `--detach`, '-d' doesn't work
 docker container ls
 curl localhost:80
 ```
 
 - Сценарий "Как 'подключиться' к работающему контейнеру?"
 ```shell
-docker container logs
-docker container attach --sig-proxy=false # otherwise detach key `ctrl-c` will stop container 
-docker container top
-docker container exec -it /bin/sh
+docker container logs <container_id>
+docker container attach --sig-proxy=false <container_id> # otherwise detach key `ctrl-c` will stop container 
+docker container top <container_id>
+docker container exec -it <container_id> /bin/sh
 ```
 
 - Сценарий "Как посмотреть свойства контейнера?"
