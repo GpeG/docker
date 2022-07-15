@@ -666,7 +666,7 @@ docker container run \
 docker container ls --all 
 
 curl localhost:8080/dbo/actuator/health
-open http://localhost:8080/dbo/swagger-ui.html
+open http://localhost:8080/dbo/swagger-ui/
 ```
 
 - Сценарий "Как остановить приложение"
